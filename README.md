@@ -54,6 +54,8 @@ $('input#name.contact-info').val('Your nemesis');
 
 9. Change the value attribute of the email field to "koalathebear@gmail.com".
 
+$('input#email.contact-info').val('koalathebear@gmail.com');
+
 10. Change the value of the submit button on the contact form to "En garde!".
 
   Bonus points: try experimenting with both the attr() function and the val() function to find different ways of doing this.
