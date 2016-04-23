@@ -46,7 +46,7 @@ $('a.action-icon-bg').css('background', 'DarkSeaGreen');
 
 7. Scroll down to the contact form.  Change the placeholder attribute of the name field to "identify yourself".
 
-$('input#name.contact-info').attr("placeholder", "Identify yourself");
+$('input#name.contact-info').attr('placeholder', 'Identify yourself');
 
 8. Change the value attribute of the name field to "your nemesis".
 
@@ -58,7 +58,11 @@ $('input#email.contact-info').val('koalathebear@gmail.com');
 
 10. Change the value of the submit button on the contact form to "En garde!".
 
+$('input#submit').val('En garde!');
+
   Bonus points: try experimenting with both the attr() function and the val() function to find different ways of doing this.
+
+$('input#submit').attr('value', 'En garde!');
 
 11. We should stop Koala from sending an email to Panda that they might regret!  Find a way to disable the submit button (hint: familiarize yourself with the [disabled attribute](http://www.w3schools.com/tags/att_input_disabled.asp)).
 
