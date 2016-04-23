@@ -76,6 +76,8 @@ $('span.bio-info-value').empty();
 
 13. That drawing of Pikachu is really cute.  Let’s duplicate it using [clone()](https://api.jquery.com/clone/) and insert it at the bottom of the page using [insertAfter()](http://api.jquery.com/insertafter/) or [appendTo()](http://api.jquery.com/appendto/).
 
+$('#right-image img').clone().appendTo('form');
+
 14. Wow, that was so satisfying I think we should do it 10 more times.  Use a `for` loop to help you do this.
 
 15. Let’s add a message about when the page was last updated.  We'll do this by appending a new `<li>` element to the `<ul>` in the sidebar (you might need to refresh the page to bring back the list items that we emptied out earlier).  
