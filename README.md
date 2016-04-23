@@ -22,11 +22,11 @@ You should be comfortable selecting elements by tag name (eg. 'h1'), class name 
 
   PROTIP: use the inspector to learn the dimensions of the current profile image and use a placeholder image service such as [Place Kitten](https://placekitten.com/) to get an image of the same size.
 
-  $('aside img').attr('src', 'http://placekitten.com/g/400/400');
+$('aside img').attr('src', 'http://placekitten.com/g/400/400');
 
 2. Select the heading that says "Panda the Bear" and change it to your own name. (hint: use [text()](http://api.jquery.com/text/))
 
-  $('h1.highlight').text('Ariane');
+$('h1.highlight').text('Ariane');
 
 3. Panda the Bear is lying about their skills!  Take the "time travel" skill off the page to satisfy your personal sense of justice.  Use your googling and docs-skimming skillz to find a jQuery function that will allow you to remove elements from the DOM.  (hint: there are multiple ways of doing this, but the [parent()](http://api.jquery.com/parent/) function might be useful when it comes to selecting the right element)
 
@@ -65,6 +65,8 @@ $('input#submit').val('En garde!');
 $('input#submit').attr('value', 'En garde!');
 
 11. We should stop Koala from sending an email to Panda that they might regret!  Find a way to disable the submit button (hint: familiarize yourself with the [disabled attribute](http://www.w3schools.com/tags/att_input_disabled.asp)).
+
+$('input#submit').prop('disabled', true);
 
 12. We should help Panda protect their privacy by clearing their personal details from the sidebar.  You can use [empty()](https://api.jquery.com/empty/) to do this.
 
