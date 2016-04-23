@@ -46,6 +46,8 @@ $('a.action-icon-bg').css('background', 'DarkSeaGreen');
 
 7. Scroll down to the contact form.  Change the placeholder attribute of the name field to "identify yourself".
 
+$('input#name.contact-info').attr("placeholder", "Identify yourself");
+
 8. Change the value attribute of the name field to "your nemesis".
 
 9. Change the value attribute of the email field to "koalathebear@gmail.com".
