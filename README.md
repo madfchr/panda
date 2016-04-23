@@ -42,7 +42,7 @@ $('.highlight').css('color', 'Gray');
 
 6. Find a way to select the round icons in the sidebar and then change their colour.
 
-
+$('a.action-icon-bg').css('background', 'DarkSeaGreen');
 
 7. Scroll down to the contact form.  Change the placeholder attribute of the name field to "identify yourself".
 
