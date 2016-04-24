@@ -117,11 +117,24 @@ for(var i = 0; i < 10; i++){
 
   It's up to you to go through the same process for the second span that will go in the right-hand column of the `<ul>` (below Panda's phone number).  Look up the docs for the `Date` class to find a way of displaying the current date inside your next text node.
 
-  After that you can find a way of selecting the `<ul>` we're after and append the new `<li>` to it.  For bonus marks, apply the correct classes to these new elements of yours so the styling is consistent with the rest of the list items.
+  After that you can find a way of selecting the `<ul>` we're after and append the new `<li>` to it.  For bonus marks,  .
 
 
 \* you may notice that these functions are vanilla JavaScript and do not come from jQuery
 
+var listItem = document.createElement('li');
+var leftSpan = document.createElement('span');
+var lastUpdated = document.createTextNode('Page last updated on');
+leftSpan.appendChild(lastUpdated);
+listItem.appendChild(leftSpan);
+
+var rightSpan = document.createElement('span');
+var todayDate = document.createTextNode(Date());
+rightSpan.appendChild(todayDate);
+listItem.appendChild(rightSpan);
+
+$('.bio-info').append(listItem);
+$('.bio-info').last().attr('class', 'bio-info-value');
 
 ##Stretch Exercise:
 Sometimes you'll run into situations where you have to get by without jQuery.  Try to find vanilla JavaScript alternatives to each of your answers that use jQuery functions.
